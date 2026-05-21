@@ -1,0 +1,47 @@
+{
+  "updated": "2026-05-21 10:00",
+  "apps": {
+    "translator": {
+      "name": "EFA Translator",
+      "filename": "EFATranslator_v1_2_26.zip",
+      "version": "1.2.26",
+      "size_kb": 90,
+      "download_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
+      "changelog": {
+        "new_features": [],
+        "bug_fixes": [
+          "翻訳の安定性を向上（タイムアウト対策）",
+          "ルビ読み誤り検証機能（T4）を追加"
+        ],
+        "improvements": [
+          "3言語同時処理から言語別順次処理に変更し長文対応を強化"
+        ]
+      }
+    },
+    "daisy": {
+      "name": "EFA OurDAISY Bilingual",
+      "filename": "EFAOurDaisyBilingual_v3_6_31.zip",
+      "version": "3.6.31",
+      "size_kb": 275,
+      "download_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
+      "changelog": {
+        "new_features": [],
+        "bug_fixes": [
+          "ひらがな版フレーズ分割の精度向上（Azure非依存化）",
+          "カタカナ固有名詞の区切り誤りを修正"
+        ],
+        "improvements": [
+          "画像リサイズ処理を改善（最大960×720px）"
+        ]
+      }
+    }
+  },
+  "manuals": {
+    "prod": {
+      "name": "EFA バイリンガルDAISY図書 制作マニュアル",
+      "filename": "EFAManual_PROD_v2_0.docx",
+      "version": "2.0",
+      "download_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4"
+    }
+  }
+}
