@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-27 00:50",
+  "updated": "2026-05-27 14:44",
   "apps": {
     "translator": {
       "name": "EFA Translator",
@@ -43,7 +43,12 @@
       "name": "EFA バイリンガルDAISY図書 制作マニュアル",
       "filename": "EFAManual_PROD_v2_0.docx",
       "version": "2.0",
-      "download_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4"
+      "download_url": "https://drive.usercontent.google.com/download?id=1Lbh6MHCiXhXt5yXQRe8jGYuqzSnr4ffx&export=download&confirm=t",
+      "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
+      "tts_report": {
+        "filename": "TTS（音声読み上げ）確認レポートフォーム.docx",
+        "download_url": "https://drive.usercontent.google.com/download?id=1qs2Bbg79tqnVW3xvttnzro2IWtPxVvN4&export=download&confirm=t"
+      }
     }
   }
 }
