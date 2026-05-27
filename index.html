@@ -509,10 +509,10 @@
           </ul>
         </div>
 
-        <a href="https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3" target="_blank" class="download-btn">
+        <a id="translator-dl-link" href="#" onclick="downloadApp('translator', event); return false;" class="download-btn">
           <svg viewBox="0 0 20 20" fill="none"><path d="M10 3v10M6 9l4 4 4-4M3 16h14" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>
           Windows版をダウンロード
-          <span class="btn-sub">(.zip / Googleドライブ)</span>
+          <span class="btn-sub">(.zip / 1クリックDL)</span>
         </a>
       </div>
     </div>
@@ -549,10 +549,10 @@
           </ul>
         </div>
 
-        <a href="https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3" target="_blank" class="download-btn">
+        <a id="daisy-dl-link" href="#" onclick="downloadApp('daisy', event); return false;" class="download-btn">
           <svg viewBox="0 0 20 20" fill="none"><path d="M10 3v10M6 9l4 4 4-4M3 16h14" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>
           Windows版をダウンロード
-          <span class="btn-sub">(.zip / Googleドライブ)</span>
+          <span class="btn-sub">(.zip / 1クリックDL)</span>
         </a>
       </div>
     </div>
@@ -734,6 +734,13 @@ const RELEASES_URL = 'https://raw.githubusercontent.com/EfaJapan/ourdaisy-biling
 const MANUAL_FOLDER_FALLBACK = 'https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4';
 let MANUAL_URLS = { set: null, folder: MANUAL_FOLDER_FALLBACK };
 
+// アプリZIPのDL URL（loadReleases() で取得後に保持）
+const APPS_FOLDER_FALLBACK = 'https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3';
+let APP_URLS = {
+  translator: { zip: null, folder: APPS_FOLDER_FALLBACK },
+  daisy:      { zip: null, folder: APPS_FOLDER_FALLBACK }
+};
+
 async function loadReleases() {
   try {
     const res = await fetch(RELEASES_URL);
@@ -750,6 +757,10 @@ async function loadReleases() {
     if (tr && tr.changelog) {
       updateChangelog('translator-changelog', tr.changelog);
     }
+    if (tr) {
+      if (tr.download_url) APP_URLS.translator.zip    = tr.download_url;
+      if (tr.folder_url)   APP_URLS.translator.folder = tr.folder_url;
+    }
 
     // OurDAISYアプリ
     const ds = data.apps && data.apps.daisy;
@@ -759,6 +770,10 @@ async function loadReleases() {
     }
     if (ds && ds.changelog) {
       updateChangelog('daisy-changelog', ds.changelog);
+    }
+    if (ds) {
+      if (ds.download_url) APP_URLS.daisy.zip    = ds.download_url;
+      if (ds.folder_url)   APP_URLS.daisy.folder = ds.folder_url;
     }
 
     // マニュアル
@@ -782,6 +797,23 @@ async function loadReleases() {
   } catch (e) {
     // 失敗時は静的コンテンツを維持・何もしない
   }
+}
+
+// アプリ（Translator / DAISY）のZIPダウンロード
+function downloadApp(appKey, event) {
+  if (event && event.preventDefault) event.preventDefault();
+
+  const urls = APP_URLS[appKey];
+  if (!urls) return false;
+
+  // ZIPのDL URLが取得できていれば、そのまま単独DL
+  if (urls.zip) {
+    triggerDownload(urls.zip);
+    return false;
+  }
+  // フォールバック：フォルダを別タブで開く
+  window.open(urls.folder, '_blank', 'noopener,noreferrer');
+  return false;
 }
 
 // マニュアル＋TTSレポート同梱ZIPのダウンロード
