@@ -577,17 +577,20 @@
       </div>
       <div style="font-size:0.75rem; color:var(--text-light); margin-top:8px; display:flex; gap:16px; flex-wrap:wrap;">
         <span id="manual-version" style="font-weight:600; color:var(--blue);">EFAManual_PROD_v2_0（最新版）</span>
-        <span>形式：Word (.docx)</span>
+        <span>形式：ZIP（Word .docx 2ファイル同梱）</span>
         <span>対象：制作ボランティア・制作協力団体</span>
       </div>
       <div style="font-size:0.78rem; color:#5A4000; margin-top:12px; padding:10px 14px; background:#FFF8E8; border-left:3px solid #F0C040; border-radius:4px; line-height:1.6;">
-        💡 「マニュアル＋TTSレポートをDL」ボタンを押すと、<strong>制作マニュアル</strong>と<strong>TTS（音声読み上げ）確認レポートフォーム</strong>の2ファイルが同時にダウンロードされます。
+        💡 ボタンを押すと <strong>ZIPファイル</strong> がダウンロードされます。<br>
+        ZIPを展開すると、以下の2ファイルが入っています：<br>
+        ・<strong>EFAManual_PROD_v[最新版].docx</strong>（制作マニュアル本体）<br>
+        ・<strong>TTS（音声読み上げ）確認レポートフォーム.docx</strong>
       </div>
     </div>
     <div style="flex-shrink:0; display:flex; flex-direction:column; gap:6px; align-items:stretch;">
       <a id="manual-dl-link" href="#" onclick="downloadManualSet(event); return false;" class="download-btn" style="white-space:nowrap; padding:12px 20px; font-size:0.88rem;">
         <svg viewBox="0 0 20 20" fill="none" style="width:18px;height:18px;"><path d="M10 3v10M6 9l4 4 4-4M3 16h14" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>
-        マニュアル＋TTSレポートをDL
+        マニュアル＋TTSレポートをDL（ZIP）
       </a>
       <a id="manual-folder-fallback" href="https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4" target="_blank" rel="noopener noreferrer" style="font-size:0.72rem; color:var(--blue); text-align:center; text-decoration:underline; line-height:1.4;">
         うまくDLできない場合はこちら<br>（フォルダから手動DL）
@@ -727,9 +730,9 @@
 // releases.json を GitHub Pages から取得して表示を動的更新
 const RELEASES_URL = 'https://raw.githubusercontent.com/EfaJapan/ourdaisy-bilingual-updates/main/releases.json';
 
-// マニュアル＋TTSレポートのDL URL（loadReleases() で取得後に保持）
+// マニュアルセットZIPのDL URL（loadReleases() で取得後に保持）
 const MANUAL_FOLDER_FALLBACK = 'https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4';
-let MANUAL_URLS = { manual: null, tts: null, folder: MANUAL_FOLDER_FALLBACK };
+let MANUAL_URLS = { set: null, folder: MANUAL_FOLDER_FALLBACK };
 
 async function loadReleases() {
   try {
@@ -764,11 +767,10 @@ async function loadReleases() {
       const el = document.getElementById('manual-version');
       if (el) el.textContent = 'EFAManual_PROD_v' + mn.version.replace(/\./g, '_') + '（最新版）';
     }
-    // マニュアル本体・TTSレポートのDL URLを保持
+    // ZIPのDL URLを保持
     if (mn) {
-      if (mn.download_url) MANUAL_URLS.manual = mn.download_url;
-      if (mn.tts_report && mn.tts_report.download_url) MANUAL_URLS.tts = mn.tts_report.download_url;
-      if (mn.folder_url) MANUAL_URLS.folder = mn.folder_url;
+      if (mn.set_download_url) MANUAL_URLS.set = mn.set_download_url;
+      if (mn.folder_url)       MANUAL_URLS.folder = mn.folder_url;
     }
 
     // 最終更新日
@@ -782,28 +784,21 @@ async function loadReleases() {
   }
 }
 
-// マニュアル＋TTSレポート同時ダウンロード
+// マニュアル＋TTSレポート同梱ZIPのダウンロード
 function downloadManualSet(event) {
   if (event && event.preventDefault) event.preventDefault();
 
-  // URLが取得できていない場合：フォルダにフォールバック
-  if (!MANUAL_URLS.manual) {
-    window.open(MANUAL_URLS.folder, '_blank', 'noopener,noreferrer');
+  // ZIPのDL URLが取得できていれば、そのまま単独DL
+  if (MANUAL_URLS.set) {
+    triggerDownload(MANUAL_URLS.set);
     return false;
   }
-
-  // 1ファイル目：マニュアル本体
-  triggerDownload(MANUAL_URLS.manual);
-
-  // 2ファイル目：TTSレポートフォーム（存在する場合）
-  if (MANUAL_URLS.tts) {
-    setTimeout(function() { triggerDownload(MANUAL_URLS.tts); }, 800);
-  }
-
+  // フォールバック：フォルダを別タブで開く
+  window.open(MANUAL_URLS.folder, '_blank', 'noopener,noreferrer');
   return false;
 }
 
-// ダウンロード実行（<a download>方式でポップアップブロック回避）
+// ダウンロード実行（<a download>方式）
 function triggerDownload(url) {
   const a = document.createElement('a');
   a.href = url;
