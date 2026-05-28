@@ -1,41 +1,41 @@
 {
-  "updated": "2026-05-28 00:50",
+  "updated": "2026-05-28 18:25",
   "apps": {
     "translator": {
       "name": "EFA Translator",
-      "filename": "EFATranslator_v1_2_27.zip",
-      "version": "1.2.27",
+      "filename": "EFATranslator_v1_2_28.zip",
+      "version": "1.2.28",
       "size_kb": 42,
-      "download_url": "https://drive.usercontent.google.com/download?id=169nF-ME3zb8VhG6LK6V5ys3SBhmI6Olq&export=download&confirm=t",
+      "download_url": "https://drive.usercontent.google.com/download?id=1_IGQUe5rWsjLjLuAzsBSX-sf57Q1nZN_&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
-        "new_features": [],
+        "new_features": [
+          "Book info merge: Reads [bookId]_book_info.json from the same folder as the input Word file"
+        ],
         "bug_fixes": [
-          "setup_EFATranslator.bat の文字化けエラーを修正",
-          "pip install 後の errorlevel チェックタイミング修正"
+          "None"
         ],
         "improvements": [
-          "Python 検出を python → py -3 の二段構えに強化",
-          "セットアップ完了時の起動ファイル参照を v1.2.27 に更新。"
+          "Backward compatible: If _book_info.json is not found, behavior is identical to v1.2.27."
         ]
       }
     },
     "daisy": {
       "name": "EFA OurDAISY Bilingual",
-      "filename": "EFAOurDaisyBilingual_v3_6_32.zip",
-      "version": "3.6.32",
+      "filename": "EFAOurDaisyBilingual_v3_6_33.zip",
+      "version": "3.6.33",
       "size_kb": 91,
-      "download_url": "https://drive.usercontent.google.com/download?id=1hia6a8afjNZsnZmC7lHKZUovXRsPn98V&export=download&confirm=t",
+      "download_url": "https://drive.usercontent.google.com/download?id=1ujoie_f7YhaZL9a8G7GStl5cD9lvmB8H&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
-        "new_features": [],
+        "new_features": [
+          "Book info auto-fill: When _classify.json contains author / illustrator /"
+        ],
         "bug_fixes": [
-          "setup_EFAOurDaisyBilingual.bat の文字化けエラーを修正",
-          "pip install 後の errorlevel チェックタイミング修正"
+          "None"
         ],
         "improvements": [
-          "Python 検出を python → py -3 の二段構えに強化",
-          "setup BAT 内のバージョン表記を v3.6.32 に統一"
+          "Backward compatible: If the fields are absent in _classify.json,"
         ]
       }
     }
@@ -46,7 +46,7 @@
       "filename": "EFAManual_PROD_v2_0.docx",
       "version": "2.0",
       "set_filename": "EFAManual_PROD_Set_v2_0.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=1i0jZotOnNIPhzQ9gxfWa_6vdmmdsGb2l&export=download&confirm=t",
+      "set_download_url": "https://drive.usercontent.google.com/download?id=11FjMJbM17yzjA8Lx3J_hcxSuRpazMpe2&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
       "tts_report": {
         "filename": "TTS（音声読み上げ）確認レポートフォーム.docx",
