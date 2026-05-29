@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-29 03:31",
+  "updated": "2026-05-30 00:50",
   "apps": {
     "translator": {
       "name": "EFA Translator",
@@ -46,7 +46,7 @@
       "filename": "EFAManual_PROD_v2_0.docx",
       "version": "2.0",
       "set_filename": "EFAManual_PROD_Set_v2_0.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=1K_NbwDr7oWNm2Ds01yRqRaixnIaiRn6M&export=download&confirm=t",
+      "set_download_url": "https://drive.usercontent.google.com/download?id=1k7rqvWe3wLgHiEhZKGJVk4sRCrGU7pPx&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
       "tts_report": {
         "filename": "TTS（音声読み上げ）確認レポートフォーム.docx",
