@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-30 15:56",
+  "updated": "2026-05-31 00:50",
   "apps": {
     "translator": {
       "name": "EFA Translator",
@@ -22,21 +22,15 @@
     },
     "daisy": {
       "name": "EFA OurDAISY Bilingual",
-      "filename": "EFAOurDaisyBilingual_v3_6_33.zip",
-      "version": "3.6.33",
-      "size_kb": 91,
-      "download_url": "https://drive.usercontent.google.com/download?id=1ujoie_f7YhaZL9a8G7GStl5cD9lvmB8H&export=download&confirm=t",
+      "filename": null,
+      "version": null,
+      "size_kb": null,
+      "download_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
-        "new_features": [
-          "Book info auto-fill: When _classify.json contains author / illustrator /"
-        ],
-        "bug_fixes": [
-          "None"
-        ],
-        "improvements": [
-          "Backward compatible: If the fields are absent in _classify.json,"
-        ]
+        "new_features": [],
+        "bug_fixes": [],
+        "improvements": []
       }
     }
   },
@@ -46,7 +40,7 @@
       "filename": "EFAManual_PROD_v2_0.docx",
       "version": "2.0",
       "set_filename": "EFAManual_PROD_Set_v2_0.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=1r_txCO72z3IrA2t6L7qP2rwueEXHnHXO&export=download&confirm=t",
+      "set_download_url": "https://drive.usercontent.google.com/download?id=1bia4JOSfr_m7pgzs-fxkcpupOOAcxnuO&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
       "tts_report": {
         "filename": "TTS（音声読み上げ）確認レポートフォーム.docx",
