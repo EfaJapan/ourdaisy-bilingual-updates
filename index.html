@@ -830,10 +830,26 @@ function downloadManualSet(event) {
   return false;
 }
 
-// ダウンロード実行（<a download>方式）
+// drive.google.com/uc 等 → drive.usercontent 形式(&confirm=t付き)に正規化。
+// &confirm=t が無いとGoogleがウイルススキャン警告ページ(HTML文書)を返し、
+// その文書が遮断されて ERR_BLOCKED_BY_RESPONSE になるため必須。
+function toUcontentUrl(url) {
+  if (!url) return url;
+  if (url.indexOf('drive.usercontent.google.com') >= 0) {
+    return url.indexOf('confirm=') >= 0 ? url : (url + (url.indexOf('?') >= 0 ? '&' : '?') + 'confirm=t');
+  }
+  var m = url.match(/[?&]id=([a-zA-Z0-9_-]+)/);
+  if (!m) { m = url.match(/\/d\/([a-zA-Z0-9_-]+)/); }
+  if (m) return 'https://drive.usercontent.google.com/download?id=' + m[1] + '&export=download&confirm=t';
+  return url;
+}
+
+// ダウンロード実行（同じタブで素のナビゲーション＝アドレスバー直打ちと同じ確実な方式）
 function triggerDownload(url) {
+  url = toUcontentUrl(url);
   const a = document.createElement('a');
   a.href = url;
+  a.setAttribute('download', '');
   a.rel = 'noopener noreferrer';
   a.style.display = 'none';
   document.body.appendChild(a);
