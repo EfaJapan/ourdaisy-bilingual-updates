@@ -470,7 +470,70 @@
 <main>
 
   <!-- アプリダウンロード -->
+    <!-- ══ OCR：ベース原稿作成（任意・少数ケース）══ -->
   <div class="section-label">
+    📷 ベース原稿の作成（任意）
+  </div>
+
+  <div class="app-card" style="margin-bottom:40px;">
+    <div class="card-header">
+      <div class="app-icon">📷</div>
+      <div class="app-name">EFA OurDaisy OCR</div>
+      <div class="app-tagline">スキャンした絵本のPDFから、ベース原稿（Word）を作成</div>
+    </div>
+    <div class="card-body">
+      <div class="what-it-does">
+        母語の絵本をスキャンしたPDFを読み込み、文字を読み取って（OCR）Wordファイルとして書き出します。翻訳は行わず、原稿のテキストだけを取り出します。EFA Translator（翻訳アプリ）に渡す<strong>ベース原稿づくりの入口</strong>として使えます。
+      </div>
+      <div class="notice-box" style="background:#FFF8ED;border:2px solid #F0C040;border-radius:12px;padding:14px 16px;font-size:0.84rem;color:#5A3E00;line-height:1.7;">
+        💡 <strong>使いどころ（少数ケース）</strong><br>
+        手元にWord原稿がなく、紙の絵本しかない場合に、日本のボランティアがOCRでベース原稿を作成します。<br>
+        作成した原稿は、<strong>現地スタッフがチェック・最終化</strong>します（OCRの結果は下書きのため、母語のわかる方の確認が必要です）。
+      </div>
+      <ul class="feature-list">
+        <li>ラオス語・クメール語など11言語に対応（OCR＝文字の自動読み取り）</li>
+        <li>完全オフラインで動作（インターネット・課金不要）</li>
+        <li>使う言語の言語パックだけをダウンロードして追加</li>
+        <li>ページ区切り付きWordで出力（確認・修正がしやすい）</li>
+      </ul>
+
+      <div class="version-box">
+        <div class="version-row">
+          <span class="version-badge">Ver 1.0.1</span>
+          <span class="version-date">2026年6月</span>
+        </div>
+        <div class="changelog-title">ご利用にあたって</div>
+        <ul class="changelog-list">
+          <li>Windows 専用です（Mac には対応していません）</li>
+          <li>OCRの結果は下書きです。必ず現地スタッフが最終確認します</li>
+        </ul>
+      </div>
+
+      <!-- STEP1 本体DL -->
+      <a id="ocr-dl-link" href="#" target="_blank" rel="noopener" class="download-btn">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M10 3v10M6 9l4 4 4-4M3 16h14" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>
+        STEP 1：アプリ本体をダウンロード
+        <span class="btn-sub">(.zip / OCRエンジン同梱)</span>
+      </a>
+
+      <!-- STEP2 言語パック -->
+      <div style="margin-top:16px;padding-top:18px;border-top:1px solid #E8F1FB;">
+        <div style="font-size:0.82rem;font-weight:700;color:#005EAD;margin-bottom:10px;">📦 STEP 2：言語パックをダウンロード（言語パック＝文字認識用のデータ）</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+          <select id="ocr-lang-select" style="flex:1;min-width:200px;padding:12px 14px;border:2px solid #C5DEFF;border-radius:10px;font-family:inherit;font-size:0.9rem;color:#1a2a3a;background:#fff;cursor:pointer;">
+            <option value="">— 言語を選んでください —</option>
+          </select>
+          <button id="ocr-lang-dl" disabled style="padding:12px 22px;background:#2a9d5c;color:#fff;border:none;border-radius:10px;font-family:inherit;font-size:0.9rem;font-weight:700;cursor:not-allowed;opacity:.5;white-space:nowrap;">↓ ダウンロード</button>
+        </div>
+        <div id="ocr-lang-status" style="font-size:0.8rem;margin-top:8px;color:#6B7280;"></div>
+        <div style="background:#E8F1FB;border-left:4px solid #005EAD;border-radius:8px;padding:11px 14px;margin-top:12px;font-size:0.82rem;color:#003A70;line-height:1.7;">
+          📁 ダウンロードしたファイル（例：<code style="background:#fff;padding:1px 6px;border-radius:4px;">lao.traineddata</code>）は、アプリと同じ場所の <code style="background:#fff;padding:1px 6px;border-radius:4px;">tessdata</code> フォルダに入れてください。
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="section-label">
     <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v7M3 5l3 3 3-3M1 10h10" stroke="white" stroke-width="1.6" stroke-linecap="round"/></svg>
     アプリのダウンロード
   </div>
@@ -882,6 +945,58 @@ function escHtml(str) {
 }
 
 loadReleases();
+
+// ── OCR Tool: ベース原稿作成アプリ ──────────────────────────
+var OCR_APP_ZIP_ID = "1LGHOuCybfl1M7MEHp8H0bTDv6-xpPdtr";
+var OCR_LANG_PACKS = [
+  { code:"lao", label:"\u30e9\u30aa\u30b9\u8a9e Lao", id:"1DClysWHkyYSIUrfhLR3bsP0KaHGfo-Cr" },
+  { code:"khm", label:"\u30af\u30e1\u30fc\u30eb\u8a9e Khmer", id:"1SD0V2fb59AHfZ_pkuNgGeztn92exHLaa" },
+  { code:"mya", label:"\u30df\u30e3\u30f3\u30de\u30fc\u8a9e Myanmar", id:"1BuCZHW0R4cHYRHTcbK8ZF9lQ41vtU3GI" },
+  { code:"nep", label:"\u30cd\u30d1\u30fc\u30eb\u8a9e Nepali", id:"1VruiWOGHgbI18rDBBPjH3jZwUTWhwZ82" },
+  { code:"tha", label:"\u30bf\u30a4\u8a9e Thai", id:"1i_cgUaJysMM-aWuTLGj4XRHIRq7CJQlH" },
+  { code:"vie", label:"\u30d9\u30c8\u30ca\u30e0\u8a9e Vietnamese", id:"1iYW_gAcZET4PhuosF6ViGwkg0qrflF5k" },
+  { code:"fil", label:"\u30bf\u30ac\u30ed\u30b0\u8a9e Tagalog", id:"1cNHk2PlSxnDXhcW2ec1HOnfZ6CrS8Whq" },
+  { code:"por", label:"\u30dd\u30eb\u30c8\u30ac\u30eb\u8a9e Portuguese", id:"1gceT0hSHKTPwxGT4YjIzJ0tNE9fjX6Xf" },
+  { code:"ind", label:"\u30a4\u30f3\u30c9\u30cd\u30b7\u30a2\u8a9e Indonesian", id:"1XtK8ke82Pt_AX8U0bCUAR1v5aJhEFbcl" },
+  { code:"eng", label:"\u82f1\u8a9e English", id:"1iyII-WyPQACgXx_IbDtJVoOYQ7kpaHn3" },
+  { code:"jpn", label:"\u65e5\u672c\u8a9e Japanese", id:"1cRkBsQcpjaf1l6c4eFb_7p2vUzAHTDPK" }
+];
+function ocrDriveUrl(id){ return "https://drive.google.com/uc?export=download&confirm=t&id=" + id; }
+(function(){
+  var btn = document.getElementById("ocr-dl-link");
+  if (btn){
+    if (OCR_APP_ZIP_ID && OCR_APP_ZIP_ID.indexOf("REPLACE") !== 0){
+      btn.href = ocrDriveUrl(OCR_APP_ZIP_ID);
+    } else {
+      btn.addEventListener("click", function(e){ e.preventDefault(); alert("\u30a2\u30d7\u30ea\u672c\u4f53\u306e\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9\u30ea\u30f3\u30af\u306f\u6e96\u5099\u4e2d\u3067\u3059\u3002"); });
+    }
+  }
+  var sel = document.getElementById("ocr-lang-select");
+  if (sel){
+    OCR_LANG_PACKS.forEach(function(p,i){
+      var o = document.createElement("option");
+      o.value = String(i);
+      o.textContent = p.label + (p.id ? "" : "\uff08\u6e96\u5099\u4e2d\uff09");
+      if (!p.id) o.disabled = true;
+      sel.appendChild(o);
+    });
+    var dl = document.getElementById("ocr-lang-dl");
+    var st = document.getElementById("ocr-lang-status");
+    sel.addEventListener("change", function(){
+      var v = this.value;
+      if (v===""){ dl.disabled=true; dl.style.opacity=".5"; dl.style.cursor="not-allowed"; st.textContent=""; return; }
+      var p = OCR_LANG_PACKS[parseInt(v,10)];
+      if (p && p.id){ dl.disabled=false; dl.style.opacity="1"; dl.style.cursor="pointer"; st.style.color="#2a9d5c"; st.textContent="\u2713 "+p.label+"\uff08"+p.code+".traineddata\uff09\u3092\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9\u3067\u304d\u307e\u3059\u3002"; }
+      else { dl.disabled=true; dl.style.opacity=".5"; dl.style.cursor="not-allowed"; st.style.color="#E08A00"; st.textContent="\u3053\u306e\u8a00\u8a9e\u30d1\u30c3\u30af\u306f\u6e96\u5099\u4e2d\u3067\u3059\u3002"; }
+    });
+    dl.addEventListener("click", function(){
+      var v = sel.value; if (v==="") return;
+      var p = OCR_LANG_PACKS[parseInt(v,10)];
+      if (p && p.id){ window.location.href = ocrDriveUrl(p.id); }
+    });
+  }
+})();
+
 </script>
 
 </body>
