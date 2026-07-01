@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01 03:31",
+  "updated": "2026-07-01 17:27",
   "apps": {
     "translator": {
       "name": "EFA Translator",
@@ -22,10 +22,10 @@
     },
     "daisy": {
       "name": "EFA OurDAISY Bilingual",
-      "filename": "EFAOurDaisyBilingual_v3_6_34.zip",
-      "version": "3.6.34",
-      "size_kb": 91,
-      "download_url": "https://drive.usercontent.google.com/download?id=1YzL8boSxI3ZrruMF_qg6q42jUV3s04dF&export=download&confirm=t",
+      "filename": "EFAOurDaisyBilingual_v3_6_35.zip",
+      "version": "3.6.35",
+      "size_kb": 93,
+      "download_url": "https://drive.usercontent.google.com/download?id=1ZODddlKf6dsxQ5Bm2aZXAboXldXTgbiI&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
         "new_features": [],
@@ -40,7 +40,7 @@
       "filename": "EFAManual_PROD_v2_0.docx",
       "version": "2.0",
       "set_filename": "EFAManual_PROD_Set_v2_0.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=1fNex3HxJ0PcbNrUspJ7VzINKSF4nwp-L&export=download&confirm=t",
+      "set_download_url": "https://drive.usercontent.google.com/download?id=1jldLaUVI2cohN2aHvp4kJcPMcV0uDj64&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
       "tts_report": {
         "filename": "TTS（音声読み上げ）確認レポートフォーム.docx",
