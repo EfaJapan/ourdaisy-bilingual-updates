@@ -562,7 +562,7 @@
         <div class="version-box">
           <div class="version-row">
             <span class="version-badge" id="translator-version">Ver 1.2.26</span>
-            <span class="version-date">2026年5月11日</span>
+            <span class="version-date" id="translator-date">2026年5月11日</span>
           </div>
           <div class="changelog-title">今回のバージョンの主な変更点</div>
           <ul class="changelog-list" id="translator-changelog">
@@ -602,7 +602,7 @@
         <div class="version-box">
           <div class="version-row">
             <span class="version-badge" id="daisy-version">Ver 3.6.31</span>
-            <span class="version-date">2026年5月14日</span>
+            <span class="version-date" id="daisy-date">2026年5月14日</span>
           </div>
           <div class="changelog-title">今回のバージョンの主な変更点</div>
           <ul class="changelog-list" id="daisy-changelog">
@@ -804,6 +804,14 @@ let APP_URLS = {
   daisy:      { zip: null, folder: APPS_FOLDER_FALLBACK }
 };
 
+// "2026-07-08" → "2026年7月8日" に変換（GAS updated フィールド用）
+function formatDateJp(ymd) {
+  if (!ymd) return '';
+  const m = String(ymd).match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+  if (!m) return ymd; // 想定外の形式はそのまま表示
+  return m[1] + '年' + parseInt(m[2], 10) + '月' + parseInt(m[3], 10) + '日';
+}
+
 async function loadReleases() {
   try {
     const res = await fetch(RELEASES_URL);
@@ -816,6 +824,10 @@ async function loadReleases() {
     if (tr && tr.version) {
       const el = document.getElementById('translator-version');
       if (el) el.textContent = 'Ver ' + tr.version;
+    }
+    if (tr && tr.updated) {
+      const dEl = document.getElementById('translator-date');
+      if (dEl) dEl.textContent = formatDateJp(tr.updated);
     }
     if (tr && tr.changelog) {
       updateChangelog('translator-changelog', tr.changelog);
@@ -830,6 +842,10 @@ async function loadReleases() {
     if (ds && ds.version) {
       const el = document.getElementById('daisy-version');
       if (el) el.textContent = 'Ver ' + ds.version;
+    }
+    if (ds && ds.updated) {
+      const dEl = document.getElementById('daisy-date');
+      if (dEl) dEl.textContent = formatDateJp(ds.updated);
     }
     if (ds && ds.changelog) {
       updateChangelog('daisy-changelog', ds.changelog);
