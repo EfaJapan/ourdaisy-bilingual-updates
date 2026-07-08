@@ -1,36 +1,42 @@
 {
-  "updated": "2026-07-08 11:44",
+  "updated": "2026-07-08 12:56",
   "apps": {
     "translator": {
       "name": "EFA Translator",
       "filename": "EFATranslator_v1_2_28.zip",
       "version": "1.2.28",
       "size_kb": 42,
-      "download_url": "https://drive.usercontent.google.com/download?id=1_IGQUe5rWsjLjLuAzsBSX-sf57Q1nZN_&export=download&confirm=t",
+      "download_url": "https://drive.usercontent.google.com/download?id=1VuNh4o6Y07D0oo82Csn4XgGP1CVYS09l&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
         "new_features": [
-          "Book info merge: Reads [bookId]_book_info.json from the same folder as the input Word file"
+          "Book info merge: reads [bookId]_book_info.json from the input folder and merges author, publisher, ISBN, age_group, etc. into the _classify.json output (local staff entries take priority over AI auto-detection)."
         ],
         "bug_fixes": [
           "None"
         ],
         "improvements": [
-          "Backward compatible: If _book_info.json is not found, behavior is identical to v1.2.27."
+          "Backward compatible: if _book_info.json is not found, behavior is identical to v1.2.27."
         ]
       }
     },
     "daisy": {
       "name": "EFA OurDAISY Bilingual",
-      "filename": "EFAOurDaisyBilingual_v3_6_48.zip",
-      "version": "3.6.48",
+      "filename": "EFAOurDaisyBilingual_v3_6_49.zip",
+      "version": "3.6.49",
       "size_kb": 101,
-      "download_url": "https://drive.usercontent.google.com/download?id=1RDjWfSF2zN30T3ojs8gy9_rTD2nBQpsg&export=download&confirm=t",
+      "download_url": "https://drive.usercontent.google.com/download?id=173Z6eHUB12CvqIL3POziDEMiet_jLo46&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
-        "new_features": [],
-        "bug_fixes": [],
-        "improvements": []
+        "new_features": [
+          "None"
+        ],
+        "bug_fixes": [
+          "Fixed Azure TTS mispronouncing the word \"Fushiawase\" (unhappy) as \"Fukouse\" in Japanese narration audio."
+        ],
+        "improvements": [
+          "None"
+        ]
       }
     }
   },
@@ -40,7 +46,7 @@
       "filename": "EFAManual_PROD_v2_0.docx",
       "version": "2.0",
       "set_filename": "EFAManual_PROD_Set_v2_0.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=1PqAUINIEJuW0HbSP2_pN3wCsdtdVf1ns&export=download&confirm=t",
+      "set_download_url": "https://drive.usercontent.google.com/download?id=1ETcGyYYUqHBJZ3mdUjr0ceLCpMUvxfhI&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
       "tts_report": {
         "filename": "TTS（音声読み上げ）確認レポートフォーム.docx",
