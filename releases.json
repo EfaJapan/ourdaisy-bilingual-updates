@@ -42,13 +42,13 @@
       }
     }
   },
-  "manuals": {
+"manuals": {
     "prod": {
       "name": "EFA バイリンガルDAISY図書 制作マニュアル",
-      "filename": "EFAManual_PROD_v2_0.docx",
-      "version": "2.0",
-      "set_filename": "EFAManual_PROD_Set_v2_0.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=1J1EZigx1mmZAsdad0z2uxn5fy_LNpKWY&export=download&confirm=t",
+      "filename": "EFAManual_PROD_v2_2.docx",
+      "version": "2.2",
+      "set_filename": "EFAManual_PROD_v2_2.zip",
+      "set_download_url": "https://drive.usercontent.google.com/download?id=1ez6zkG8I9s1OpGP4x0oa5nw9h7I6IPTE&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
       "tts_report": {
         "filename": "TTS（音声読み上げ）確認レポートフォーム.docx",
@@ -56,4 +56,3 @@
       }
     }
   }
-}
