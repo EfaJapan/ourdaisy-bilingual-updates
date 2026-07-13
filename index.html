@@ -642,6 +642,7 @@
         <span id="manual-version" style="font-weight:600; color:var(--blue);">EFAManual_PROD_v2_0（最新版）</span>
         <span>形式：ZIP（Word .docx 2ファイル同梱）</span>
         <span>対象：制作ボランティア・制作協力団体</span>
+        <span class="release-updated"></span>
       </div>
       <div style="font-size:0.78rem; color:#5A4000; margin-top:12px; padding:10px 14px; background:#FFF8E8; border-left:3px solid #F0C040; border-radius:4px; line-height:1.6;">
         💡 ボタンを押すと <strong>ZIPファイル</strong> がダウンロードされます。<br>
@@ -814,7 +815,10 @@ function formatDateJp(ymd) {
 
 async function loadReleases() {
   try {
-    const res = await fetch(RELEASES_URL);
+    // キャッシュバスター：raw.githubusercontent.comのCDNキャッシュ(通常5分程度)や
+    // ブラウザキャッシュにより更新直後に古いJSONが返ることがあるため、
+    // URLにタイムスタンプを付与し、cache:'no-store'でHTTPキャッシュも完全に無効化する。
+    const res = await fetch(RELEASES_URL + '?t=' + Date.now(), { cache: 'no-store' });
     if (!res.ok) return; // 失敗時は静的コンテンツをそのまま表示
 
     const data = await res.json();
