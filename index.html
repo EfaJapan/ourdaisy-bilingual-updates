@@ -871,10 +871,13 @@ async function loadReleases() {
       if (mn.folder_url)       MANUAL_URLS.folder = mn.folder_url;
     }
 
-    // 最終更新日
-    if (data.updated) {
+    // 最終更新日（マニュアル自身のupdatedフィールドから取得。
+    // トップレベルのdata.updatedに依存すると「バージョンを上げたのに日付欄だけ書き忘れる」
+    // という別建ての手動作業が発生するため、version/filename等と同じmanuals.prodブロック内の
+    // 1フィールドに統一している）
+    if (mn && mn.updated) {
       const els = document.querySelectorAll('.release-updated');
-      els.forEach(el => { el.textContent = '最終更新：' + data.updated; });
+      els.forEach(el => { el.textContent = '最終更新：' + formatDateJp(mn.updated); });
     }
 
   } catch (e) {
