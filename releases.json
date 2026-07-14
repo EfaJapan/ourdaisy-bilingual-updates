@@ -1,40 +1,40 @@
 {
-  "updated": "2026-07-14 03:31",
+  "updated": "2026-07-14 11:18",
   "apps": {
     "translator": {
       "name": "EFA Translator",
-      "filename": "EFATranslator_v1_2_28.zip",
-      "version": "1.2.28",
-      "size_kb": 42,
-      "updated": "2026-07-08",
-      "download_url": "https://drive.usercontent.google.com/download?id=1VuNh4o6Y07D0oo82Csn4XgGP1CVYS09l&export=download&confirm=t",
+      "filename": "EFATranslator_v1_2_30.zip",
+      "version": "1.2.30",
+      "size_kb": 43,
+      "updated": "2026-07-14",
+      "download_url": "https://drive.usercontent.google.com/download?id=1LqghLM43WV0cVPHIs1nyIq_98eZ0Zrhi&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
         "new_features": [
-          "Book info merge: reads [bookId]_book_info.json from the input folder and merges author, publisher, ISBN, age_group, etc. into the _classify.json output (local staff entries take priority over AI auto-detection)."
-        ],
-        "bug_fixes": [
           "None"
         ],
+        "bug_fixes": [
+          "Fixed a bug in volunteer mode (member_id set) where the Claude API proxy"
+        ],
         "improvements": [
-          "Backward compatible: if _book_info.json is not found, behavior is identical to v1.2.27."
+          "None"
         ]
       }
     },
     "daisy": {
       "name": "EFA OurDAISY Bilingual",
-      "filename": "EFAOurDaisyBilingual_v3_6_49.zip",
-      "version": "3.6.49",
-      "size_kb": 101,
-      "updated": "2026-07-08",
-      "download_url": "https://drive.usercontent.google.com/download?id=173Z6eHUB12CvqIL3POziDEMiet_jLo46&export=download&confirm=t",
+      "filename": "EFAOurDaisyBilingual_v3_6_52.zip",
+      "version": "3.6.52",
+      "size_kb": 103,
+      "updated": "2026-07-14",
+      "download_url": "https://drive.usercontent.google.com/download?id=197lZ9fT7jfzQdwOCsM2082HocN07gMs7&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
         "new_features": [
           "None"
         ],
         "bug_fixes": [
-          "Fixed Azure TTS mispronouncing the word \"Fushiawase\" (unhappy) as \"Fukouse\" in Japanese narration audio."
+          "Fixed the same GET/URL-length bug as EFATranslator v1.2.30: in volunteer"
         ],
         "improvements": [
           "None"
@@ -45,10 +45,10 @@
   "manuals": {
     "prod": {
       "name": "EFA バイリンガルDAISY図書 制作マニュアル",
-      "filename": "EFAManual_PROD_v2_2.docx",
-      "version": "2.2",
-      "set_filename": "EFAManual_PROD_Set_v2_2.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=1LstS0YkY8VWZhjEHca4nmRUMtFpsw-1V&export=download&confirm=t",
+      "filename": "EFAManual_PROD_v2_3.docx",
+      "version": "2.3",
+      "set_filename": "EFAManual_PROD_Set_v2_3.zip",
+      "set_download_url": "https://drive.usercontent.google.com/download?id=1P51AvKxHva07LB8cJJbGUP7ci7b3OQuP&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
       "tts_report": {
         "filename": "TTS（音声読み上げ）確認レポートフォーム.docx",
