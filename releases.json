@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-22 00:50",
+  "updated": "2026-07-22 03:31",
   "apps": {
     "translator": {
       "name": "EFA Translator",
@@ -48,7 +48,7 @@
       "filename": "EFAManual_PROD_v2_4.docx",
       "version": "2.4",
       "set_filename": "EFAManual_PROD_Set_v2_4.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=18FaB73bVfodpypG5fKogjk6KiRghfkeR&export=download&confirm=t",
+      "set_download_url": "https://drive.usercontent.google.com/download?id=1lAKJ3FxVkgMjXhSYcGNU5Vzv_SRc_MKi&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
       "tts_report": {
         "filename": "TTS_ReportForm.docx",
