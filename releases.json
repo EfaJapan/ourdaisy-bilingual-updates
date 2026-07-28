@@ -1,23 +1,21 @@
 {
-  "updated": "2026-07-28 03:31",
+  "updated": "2026-07-28 16:10",
   "apps": {
     "translator": {
       "name": "EFA Translator",
-      "filename": "EFATranslator_v1_2_30.zip",
-      "version": "1.2.30",
-      "size_kb": 43,
-      "updated": "2026-07-14",
-      "download_url": "https://drive.usercontent.google.com/download?id=1LqghLM43WV0cVPHIs1nyIq_98eZ0Zrhi&export=download&confirm=t",
+      "filename": "EFATranslator_v1_2_31.zip",
+      "version": "1.2.31",
+      "size_kb": 44,
+      "updated": "2026-07-28",
+      "download_url": "https://drive.usercontent.google.com/download?id=1JO1r3NOx6hx9QmPM7bpOexMP-qIUzOIm&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
-        "new_features": [
-          "None"
-        ],
+        "new_features": [],
         "bug_fixes": [
-          "Fixed a bug in volunteer mode (member_id set) where the Claude API proxy"
+          "AI書誌分類（対象年齢・読解レベル）と、book_info.jsonからの書籍情報引き継ぎ"
         ],
         "improvements": [
-          "None"
+          "設定画面の「担当者ID」欄の説明文を変更。ボランティアIDを忘れた場合でも、"
         ]
       }
     },
@@ -25,19 +23,15 @@
       "name": "EFA OurDAISY Bilingual",
       "filename": "EFAOurDaisyBilingual_v3_6_52.zip",
       "version": "3.6.52",
-      "size_kb": 103,
-      "updated": "2026-07-14",
-      "download_url": "https://drive.usercontent.google.com/download?id=197lZ9fT7jfzQdwOCsM2082HocN07gMs7&export=download&confirm=t",
+      "size_kb": 102,
+      "updated": "2026-07-28",
+      "download_url": "https://drive.usercontent.google.com/download?id=14ZHqCfM9TwjNyXt89e8HDVbOsUV7Z9tr&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
-        "new_features": [
-          "None"
-        ],
-        "bug_fixes": [
-          "Fixed the same GET/URL-length bug as EFATranslator v1.2.30: in volunteer"
-        ],
+        "new_features": [],
+        "bug_fixes": [],
         "improvements": [
-          "None"
+          "設定画面の「担当者ID」欄の説明文を変更。ボランティアIDを忘れた場合でも、"
         ]
       }
     }
@@ -48,7 +42,7 @@
       "filename": "EFAManual_PROD_v2_4.docx",
       "version": "2.4",
       "set_filename": "EFAManual_PROD_Set_v2_4.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=16ciu2iZ2651vXXK4PIZMAQB7Jaf2dyLc&export=download&confirm=t",
+      "set_download_url": "https://drive.usercontent.google.com/download?id=1Xw7HU-mEnjToalJ5MpjpKRWTXKFfh78t&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
       "tts_report": {
         "filename": "TTS_ReportForm.docx",
