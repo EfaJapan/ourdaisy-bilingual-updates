@@ -1,38 +1,36 @@
 {
-  "updated": "2026-08-14 14:59",
+  "updated": "2026-08-14 16:18",
   "apps": {
     "translator": {
       "name": "EFA Translator",
-      "filename": "EFATranslator_v1_2_31.zip",
-      "version": "1.2.31",
+      "filename": "EFATranslator_v1_2_32.zip",
+      "version": "1.2.32",
       "size_kb": 44,
-      "updated": "2026-07-28",
-      "download_url": "https://drive.usercontent.google.com/download?id=1JO1r3NOx6hx9QmPM7bpOexMP-qIUzOIm&export=download&confirm=t",
+      "updated": "2026-08-14",
+      "download_url": "https://drive.usercontent.google.com/download?id=1x_QsugXWLQMZ7CcV_S534LJPMuxUu5QN&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
         "new_features": [],
         "bug_fixes": [
-          "AI書誌分類（対象年齢・読解レベル）と、book_info.jsonからの書籍情報引き継ぎ"
+          "設定画面（担当者ID方式に変更後）でUIが崩れる不具合を修正。"
         ],
-        "improvements": [
-          "設定画面の「担当者ID」欄の説明文を変更。ボランティアIDを忘れた場合でも、"
-        ]
+        "improvements": []
       }
     },
     "daisy": {
       "name": "EFA OurDAISY Bilingual",
-      "filename": "EFAOurDaisyBilingual_v3_6_52.zip",
-      "version": "3.6.52",
-      "size_kb": 102,
-      "updated": "2026-07-28",
-      "download_url": "https://drive.usercontent.google.com/download?id=14ZHqCfM9TwjNyXt89e8HDVbOsUV7Z9tr&export=download&confirm=t",
+      "filename": "EFAOurDaisyBilingual_v3_6_53.zip",
+      "version": "3.6.53",
+      "size_kb": 104,
+      "updated": "2026-08-14",
+      "download_url": "https://drive.usercontent.google.com/download?id=1S10zdpbVXPoXBmm3bs5_UtStgjDwMmCq&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
         "new_features": [],
-        "bug_fixes": [],
-        "improvements": [
-          "設定画面の「担当者ID」欄の説明文を変更。ボランティアIDを忘れた場合でも、"
-        ]
+        "bug_fixes": [
+          "設定画面（担当者ID方式に変更後）でUIが崩れる不具合を修正。"
+        ],
+        "improvements": []
       }
     }
   },
@@ -42,7 +40,7 @@
       "filename": "EFAManual_PROD_v3_5.docx",
       "version": "3.5",
       "set_filename": "EFAManual_PROD_Set_v3_5.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=1WNWi3kmxxSxTK92453U9hs4ghRZw4urg&export=download&confirm=t",
+      "set_download_url": "https://drive.usercontent.google.com/download?id=17w8W5ZxJ9kYmjiK8RYMURnmKRq9RCK77&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
       "tts_report": {
         "filename": "TTS_ReportForm_v1_1.docx",
