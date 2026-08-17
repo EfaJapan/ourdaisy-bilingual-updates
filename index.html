@@ -1210,7 +1210,7 @@ function escHtml(str) {
 loadReleases();
 
 // ── OCR Tool: ベース原稿作成アプリ ──────────────────────────
-var OCR_APP_ZIP_ID = "1LGHOuCybfl1M7MEHp8H0bTDv6-xpPdtr";
+var OCR_APP_ZIP_ID = "1WKW-bsns3b4PkNIlzyIs_0sHL29MgKPD"; // EFAOurDaisyOCR_v1_0_1.zip（2026-08-17 修正：旧IDがリンク切れのため差し替え）
 var OCR_LANG_PACKS = [
   { code:"lao", label:"\u30e9\u30aa\u30b9\u8a9e Lao", id:"1DClysWHkyYSIUrfhLR3bsP0KaHGfo-Cr" },
   { code:"khm", label:"\u30af\u30e1\u30fc\u30eb\u8a9e Khmer", id:"1SD0V2fb59AHfZ_pkuNgGeztn92exHLaa" },
@@ -1224,7 +1224,7 @@ var OCR_LANG_PACKS = [
   { code:"eng", label:"\u82f1\u8a9e English", id:"1iyII-WyPQACgXx_IbDtJVoOYQ7kpaHn3" },
   { code:"jpn", label:"\u65e5\u672c\u8a9e Japanese", id:"1cRkBsQcpjaf1l6c4eFb_7p2vUzAHTDPK" }
 ];
-function ocrDriveUrl(id){ return "https://drive.google.com/uc?export=download&confirm=t&id=" + id; }
+function ocrDriveUrl(id){ return "https://drive.usercontent.google.com/download?id=" + id + "&export=download&confirm=t"; }
 (function(){
   var btn = document.getElementById("ocr-dl-link");
   if (btn){
