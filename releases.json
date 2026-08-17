@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17 09:48",
+  "updated": "2026-08-17 11:59",
   "apps": {
     "translator": {
       "name": "EFA Translator",
@@ -19,21 +19,24 @@
     },
     "daisy": {
       "name": "EFA OurDAISY Bilingual",
-      "filename": "EFAOurDaisyBilingual_v3_6_55.zip",
-      "version": "3.6.55",
-      "size_kb": 104,
-      "updated": "2026-08-15",
-      "download_url": "https://drive.usercontent.google.com/download?id=17pJI2flAlddPgT2CsiSKp2E3n9Rtf69W&export=download&confirm=t",
+      "filename": "EFAOurDaisyBilingual_v3_6_56.zip",
+      "version": "3.6.56",
+      "size_kb": 105,
+      "updated": "2026-08-17",
+      "download_url": "https://drive.usercontent.google.com/download?id=1LofSST4EzMMtns1DWedanK-ThbXBFt5k&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
         "new_features": [
           "なし"
         ],
         "bug_fixes": [
-          "「一ばん上」の読み上げが「いちばんじょう」と誤読される不具合を修正。"
+          "半角カッコ「(よみ)」形式のルビが認識されず、漢字とフリガナが",
+          "「降りて行き」「降りて行くこと」等、人・生き物が地面や穴を",
+          "キャラクター名「パコー魚」の「魚」の読みが「さかな」「ぎょ」で"
         ],
         "improvements": [
-          "TSV(books_import.tsv)生成時、全フィールド値から改行・タブ文字を"
+          "なし",
+          "LAO-900 やさしい日本語版P.10〜11「方法（ほうほう）はないかな」の"
         ]
       }
     }
@@ -44,7 +47,7 @@
       "filename": "EFAManual_PROD_v3_6_1.docx",
       "version": "3.6.1",
       "set_filename": "EFAManual_PROD_Set_v3_6_1.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=1bN0zdMgBDPk7pf7kis4SJ0WOa9d145NB&export=download&confirm=t",
+      "set_download_url": "https://drive.usercontent.google.com/download?id=153XnnbZR-s-xPhRPpwoyUDmQEFx3Bik8&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
       "tts_report": {
         "filename": "TTS_ReportForm_v1_1.docx",
