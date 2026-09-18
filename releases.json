@@ -1,22 +1,21 @@
 {
-  "updated": "2026-09-18 00:15",
+  "updated": "2026-09-18 14:27",
   "apps": {
     "translator": {
       "name": "EFA Translator",
-      "filename": "EFATranslator_v1_2_33.zip",
-      "version": "1.2.33",
-      "size_kb": 43,
-      "updated": "2026-09-16",
-      "download_url": "https://drive.usercontent.google.com/download?id=1CcDy4b2tkKuVExpzHscyJRwyeDyodSEP&export=download&confirm=t",
+      "filename": "EFATranslator_v1_2_34.zip",
+      "version": "1.2.34",
+      "size_kb": 46,
+      "updated": "2026-09-18",
+      "download_url": "https://drive.usercontent.google.com/download?id=1Alq8MjOj2mHmAeuB8bErNHtJqgdJ4Tro&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
         "new_features": [
-          "Added support for Sinhala (si-LK) as a target language",
-          "Added support for Spanish (Peru) (es-PE) as a target language",
-          "Added support for Hindi (hi-IN) as a target language"
+          "None"
         ],
         "bug_fixes": [
-          "None"
+          "Fixed an issue where the Japanese translation was not produced correctly",
+          "The page-number-label dictionary above was initially missing entries for"
         ],
         "improvements": [
           "None"
@@ -25,20 +24,18 @@
     },
     "daisy": {
       "name": "EFA OurDAISY Bilingual",
-      "filename": "EFAOurDaisyBilingual_v3_6_57.zip",
-      "version": "3.6.57",
-      "size_kb": 105,
-      "updated": "2026-09-16",
-      "download_url": "https://drive.usercontent.google.com/download?id=1NszGKi58Ffm7l80ETABpC6wM_cioDdj_&export=download&confirm=t",
+      "filename": "EFAOurDaisyBilingual_v3_6_59.zip",
+      "version": "3.6.59",
+      "size_kb": 108,
+      "updated": "2026-09-18",
+      "download_url": "https://drive.usercontent.google.com/download?id=1GWvy4Zgbcr5wK1xvRVXBzRG21pppSz8E&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
         "new_features": [
-          "Added support for Sinhala (si-LK) as a target language",
-          "Added support for Spanish (Peru) (es-PE) as a target language",
-          "Added support for Hindi (hi-IN) as a target language"
+          "None"
         ],
         "bug_fixes": [
-          "None"
+          "Fixed missing entries in the per-language dictionary used to exclude"
         ],
         "improvements": [
           "None"
@@ -52,7 +49,7 @@
       "filename": "EFAManual_PROD_v3_6_1.docx",
       "version": "3.6.1",
       "set_filename": "EFAManual_PROD_Set_v3_6_1.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=10LL46hMOHtmHkNf0bbjD7ZFNuyWZ9kbV&export=download&confirm=t",
+      "set_download_url": "https://drive.usercontent.google.com/download?id=1i_CA4BDPc7st79xGZ5DOKklTUt_bB2ak&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
       "tts_report": {
         "filename": "TTS_ReportForm_v1_1.docx",
