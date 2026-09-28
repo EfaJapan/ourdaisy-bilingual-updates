@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-28 14:59",
+  "updated": "2026-09-29 00:15",
   "apps": {
     "translator": {
       "name": "EFA Translator",
@@ -21,18 +21,18 @@
     },
     "daisy": {
       "name": "EFA OurDAISY Bilingual",
-      "filename": "EFAOurDaisyBilingual_v3_6_60.zip",
-      "version": "3.6.60",
-      "size_kb": 109,
-      "updated": "2026-09-18",
-      "download_url": "https://drive.usercontent.google.com/download?id=16s6oBDcokZ9u9ShtTSG8QUT37iEY3glx&export=download&confirm=t",
+      "filename": "EFAOurDaisyBilingual_v3_6_64.zip",
+      "version": "3.6.64",
+      "size_kb": 114,
+      "updated": "2026-09-28",
+      "download_url": "https://drive.usercontent.google.com/download?id=1_yUxEMKizq8yHNEIJ7jHJoat43jUyCLb&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
         "new_features": [
           "None"
         ],
         "bug_fixes": [
-          "Fixed a gap in the v3.6.59 page-label-word fix: detection only checked"
+          "Fixed a parse failure (\"'NoneType' object has no attribute 'name'\") for"
         ],
         "improvements": [
           "None"
@@ -46,7 +46,7 @@
       "filename": "EFAManual_PROD_v3_6_1.docx",
       "version": "3.6.1",
       "set_filename": "EFAManual_PROD_Set_v3_6_1.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=1nKar5qafDkfo0cWrPUHbPiiFX6lyOxUJ&export=download&confirm=t",
+      "set_download_url": "https://drive.usercontent.google.com/download?id=1zTJnz5TQr_GhpFALXbU0spfMcNT2PQib&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
       "tts_report": {
         "filename": "TTS_ReportForm_v1_1.docx",
