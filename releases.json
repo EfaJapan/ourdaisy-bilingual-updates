@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01 11:55",
+  "updated": "2026-10-01 12:25",
   "apps": {
     "translator": {
       "name": "EFA Translator",
@@ -27,29 +27,16 @@
     },
     "daisy": {
       "name": "EFA OurDAISY Bilingual",
-      "filename": "EFAOurDaisyBilingual_v3_6_66.zip",
-      "version": "3.6.66",
-      "size_kb": 116,
+      "filename": "EFAOurDaisyBilingual_v3_6_67.zip",
+      "version": "3.6.67",
+      "size_kb": 117,
       "updated": "2026-10-01",
-      "download_url": "https://drive.usercontent.google.com/download?id=1CxlqpCY2uLLbqntzwrZwg19z024iq-2T&export=download&confirm=t",
+      "download_url": "https://drive.usercontent.google.com/download?id=1J1oQB47_X6vTePFYm_E_SvjhLztyDF0x&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
-        "new_features": [
-          "（v3.6.57）対象言語にシンハラ語・スペイン語（ペルー）・ヒンディー語を追加しました。"
-        ],
-        "bug_fixes": [
-          "読み上げの音声と、ハイライト（色が変わる文字の位置）が最大1秒ほどずれる不具合を修正しました。",
-          "（v3.6.65）日本語版で、記号（」や―など）だけの部分が単独で区切られ、ハイライトが止まることがある不具合を修正しました。",
-          "（v3.6.64）一部のWord原稿（Googleドキュメントから書き出したものなど）で、変換が始まらない不具合を修正しました。",
-          "（v3.6.61〜62）ラオス語・クメール語で、かぎかっこ（\"）の位置がずれたり二重に見えたりする不具合を修正しました。",
-          "（v3.6.59〜60）新しく追加した言語の原稿で、ページ番号（見出し）が本文として読み上げられる不具合を修正しました。",
-          "（v3.6.58）ラオス語・クメール語で、かぎかっこ（\"）の所で読み上げのハイライトが止まる不具合を修正しました。"
-        ],
-        "improvements": [
-          "文のあとの間（ま）の長さを、閉じかっこの手前の文字で判断するようにしました。",
-          "（v3.6.63）ラオス語・クメール語で、長い文が単語の途中で区切られにくくなりました。",
-          "（v3.6.63）原稿のファイル名から書名を取り出す処理を、新しく追加した言語にも対応させました。"
-        ]
+        "new_features": [],
+        "bug_fixes": [],
+        "improvements": []
       }
     }
   },
@@ -59,7 +46,7 @@
       "filename": "EFAManual_PROD_v3_6_1.docx",
       "version": "3.6.1",
       "set_filename": "EFAManual_PROD_Set_v3_6_1.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=1-rCKfN2GyYXEbu71xGgJ4pDUAuyAowCr&export=download&confirm=t",
+      "set_download_url": "https://drive.usercontent.google.com/download?id=1R8f-ItH1znoXDWWG2z4LHCO7PmONDB0l&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
       "tts_report": {
         "filename": "TTS_ReportForm_v1_1.docx",
