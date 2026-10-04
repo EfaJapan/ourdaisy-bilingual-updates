@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-04 14:59",
+  "updated": "2026-10-04 17:21",
   "apps": {
     "translator": {
       "name": "EFA Translator",
@@ -27,11 +27,11 @@
     },
     "daisy": {
       "name": "EFA OurDAISY Bilingual",
-      "filename": "EFAOurDaisyBilingual_v3_6_67.zip",
-      "version": "3.6.67",
-      "size_kb": 117,
-      "updated": "2026-10-01",
-      "download_url": "https://drive.usercontent.google.com/download?id=1J1oQB47_X6vTePFYm_E_SvjhLztyDF0x&export=download&confirm=t",
+      "filename": null,
+      "version": null,
+      "size_kb": null,
+      "updated": null,
+      "download_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
         "new_features": [],
@@ -41,17 +41,6 @@
     }
   },
   "manuals": {
-    "prod": {
-      "name": "EFA バイリンガルDAISY図書 制作マニュアル",
-      "filename": "EFAManual_PROD_v3_7.docx",
-      "version": "3.7",
-      "set_filename": "EFAManual_PROD_Set_v3_7.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=1DhBDGDfowZj57KSAlPmPjaCezdCcUE4X&export=download&confirm=t",
-      "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
-      "tts_report": {
-        "filename": "TTS_ReportForm_v1_1.docx",
-        "download_url": "https://drive.usercontent.google.com/download?id=1vFHsGVgeb3UNRHn9UxJFvQTq4BVXz2cb&export=download&confirm=t"
-      }
-    }
+    "prod": null
   }
 }
