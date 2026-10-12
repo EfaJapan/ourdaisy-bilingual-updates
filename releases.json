@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12 14:59",
+  "updated": "2026-10-12 19:53",
   "apps": {
     "translator": {
       "name": "EFA Translator",
@@ -27,18 +27,22 @@
     },
     "daisy": {
       "name": "EFA OurDAISY Bilingual",
-      "filename": "EFAOurDaisyBilingual_v3_6_68.zip",
-      "version": "3.6.68",
-      "size_kb": 118,
-      "updated": "2026-10-07",
-      "download_url": "https://drive.usercontent.google.com/download?id=1zXZZWO0QlSfaqLvFPZAc9cHt6ZyaX6Xj&export=download&confirm=t",
+      "filename": "EFAOurDaisyBilingual_v3_6_69.zip",
+      "version": "3.6.69",
+      "size_kb": 121,
+      "updated": "2026-10-12",
+      "download_url": "https://drive.usercontent.google.com/download?id=1kxWSP2_ZlBHkHQw4Fc29z78ZOZCyJ3Gm&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
         "new_features": [],
         "bug_fixes": [
-          "ラオス語などの本で、文字の表示用フォントがEPUBに正しく登録されない不具合を修正しました。",
-          "1ページ目に絵がない原稿で、リーダーの本棚に表紙が表示されない不具合を修正しました。",
-          "リーダーに表示される再生時間や進み具合がずれることがある不具合を修正しました。",
+          "画像の説明文のところで読み上げが止まり、「進む」を押さないと先に進まない不具合を修正しました。",
+          "「へっちゃら」「きれい好き」「何百匹」「1さつ」「ついて行く」「べつの におい」などの読み間違いを修正しました。",
+          "「小さい ― 大きい」のように並べた言葉が、続けて読まれてしまう不具合を修正しました。",
+          "読み方を直した言葉のあとで、ハイライトの位置がずれることがある不具合を修正しました。",
+          "（v3.6.68）ラオス語などの本で、文字の表示用フォントがEPUBに正しく登録されない不具合を修正しました。",
+          "（v3.6.68）1ページ目に絵がない原稿で、リーダーの本棚に表紙が表示されない不具合を修正しました。",
+          "（v3.6.68）リーダーに表示される再生時間や進み具合がずれることがある不具合を修正しました。",
           "（v3.6.67）日本語の版で、読み上げに合わせた文字のハイライトが止まったり、最初に戻ったりすることがある不具合を修正しました。",
           "（v3.6.67）Googleドキュメントから保存したWordなどで、変換が始まらない不具合を修正しました。",
           "（v3.6.66）読み上げとハイライトの位置がずれることがある不具合を修正しました。",
@@ -60,7 +64,7 @@
       "filename": "EFAManual_PROD_v3_8.docx",
       "version": "3.8",
       "set_filename": "EFAManual_PROD_Set_v3_8.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=1gYSerHsEUPY29kx2sWz2_9V9sRaiMpUD&export=download&confirm=t",
+      "set_download_url": "https://drive.usercontent.google.com/download?id=10J9YKxjwea5dlRDiYUdufErA1RiU8j94&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
       "tts_report": {
         "filename": "TTS_ReportForm_v1_2.docx",
