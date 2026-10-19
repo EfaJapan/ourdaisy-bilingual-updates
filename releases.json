@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20 00:15",
+  "updated": "2026-10-20 08:47",
   "apps": {
     "translator": {
       "name": "EFA Translator",
@@ -72,14 +72,14 @@
   "manuals": {
     "prod": {
       "name": "EFA バイリンガルDAISY図書 制作マニュアル",
-      "filename": "EFAManual_PROD_v3_10.docx",
-      "version": "3.10",
-      "set_filename": "EFAManual_PROD_Set_v3_10.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=1NN4I4pgHKnCVQeA3gM5IrqUrldQuqIai&export=download&confirm=t",
+      "filename": "EFAManual_PROD_v3_11.docx",
+      "version": "3.11",
+      "set_filename": "EFAManual_PROD_Set_v3_11.zip",
+      "set_download_url": "https://drive.usercontent.google.com/download?id=1RbJdinUX-7OiSB9UedkmMRcbMG_JHGZ5&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
       "tts_report": {
         "filename": "TTS_ReportForm_v1_2.docx",
-        "download_url": "https://drive.usercontent.google.com/download?id=1j5MiUNLotq_uaQKZodH_bqAC1xTuc9EV&export=download&confirm=t"
+        "download_url": "https://drive.usercontent.google.com/download?id=178QUHjN5w80Kgsf1rgFoKPyTJXtYVeSa&export=download&confirm=t"
       }
     }
   }
