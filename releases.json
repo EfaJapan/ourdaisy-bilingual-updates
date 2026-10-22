@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22 14:59",
+  "updated": "2026-10-22 22:20",
   "apps": {
     "translator": {
       "name": "EFA Translator",
@@ -34,11 +34,11 @@
     },
     "daisy": {
       "name": "EFA OurDAISY Bilingual",
-      "filename": "EFAOurDaisyBilingual_v3_6_71.zip",
-      "version": "3.6.71",
-      "size_kb": 130,
+      "filename": "EFAOurDaisyBilingual_v3_6_72.zip",
+      "version": "3.6.72",
+      "size_kb": 131,
       "updated": "2026-10-22",
-      "download_url": "https://drive.usercontent.google.com/download?id=1CVhxsCxXnWmN8N5fT5oe5oV1zqWhMWAu&export=download&confirm=t",
+      "download_url": "https://drive.usercontent.google.com/download?id=1JmZCHl4fVbcQVOmkJdSv7qX0qQh0kSgM&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
         "new_features": [
@@ -46,7 +46,8 @@
           "（v3.6.70）選んだ言語と原稿の言語がちがうとき、変換の前に確認画面を出すようにしました。"
         ],
         "bug_fixes": [
-          "Visual C++ 再頒布可能パッケージが無いパソコンで、何も表示されずにアプリが閉じてしまう問題を直しました。入れ方を画面に表示します。",
+          "書籍情報で母語版に選んだ対象年齢・読書レベル・日本語レベルが、ライブラリ登録用のファイルに選んだとおりに入らない問題を直しました。",
+          "（v3.6.71）Visual C++ 再頒布可能パッケージが無いパソコンで、何も表示されずにアプリが閉じてしまう問題を直しました。入れ方を画面に表示します。",
           "（v3.6.70）言語の初期値がラオス語になっていて、ほかの言語の原稿をラオス語の本として作ってしまうことがある問題を直しました。",
           "（v3.6.70）ファイル名の言語名が選んだ言語に書き換えられ、言語のまちがいに気づけない問題を直しました。",
           "（v3.6.70）書籍情報の「言語」欄が、Wordの情報に引きずられてまちがった言語になることがある問題を直しました。",
@@ -67,9 +68,9 @@
           "（v3.6.58）ラオス語・クメール語の本で、再生が途中で止まる不具合を修正しました。"
         ],
         "improvements": [
-          "起動に失敗したとき、黒い画面がすぐに閉じず、案内を表示して止まるようにしました。",
-          "やさしい日本語版は小学1・2年生で習う漢字にふりがなを付けない仕様のため、画面の「総ルビ」という表記を「ふりがな付き」に直しました。",
-          "セットアップの最後に、起動するファイルの見分け方と担当者IDの入力を案内するようにしました。",
+          "（v3.6.71）起動に失敗したとき、黒い画面がすぐに閉じず、案内を表示して止まるようにしました。",
+          "（v3.6.71）やさしい日本語版は小学1・2年生で習う漢字にふりがなを付けない仕様のため、画面の「総ルビ」という表記を「ふりがな付き」に直しました。",
+          "（v3.6.71）セットアップの最後に、起動するファイルの見分け方と担当者IDの入力を案内するようにしました。",
           "（v3.6.70）言語の一覧に日本語名を付け、見分けやすくしました。",
           "（v3.6.63）ラオス語・クメール語の長い文が、音節の途中で区切られにくくなりました。"
         ]
@@ -82,7 +83,7 @@
       "filename": "EFAManual_PROD_v3_12.docx",
       "version": "3.12",
       "set_filename": "EFAManual_PROD_Set_v3_12.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=1t22AkR_pMTWaUICEAheTum96Nf7korNK&export=download&confirm=t",
+      "set_download_url": "https://drive.usercontent.google.com/download?id=14B3HdI7Bm-r0Whc3hf7H2AXXdUZtoADb&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
       "tts_report": {
         "filename": "TTS_ReportForm_v1_2.docx",
