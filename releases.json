@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24 14:59",
+  "updated": "2026-10-24 20:30",
   "apps": {
     "translator": {
       "name": "EFA Translator",
@@ -34,19 +34,23 @@
     },
     "daisy": {
       "name": "EFA OurDAISY Bilingual",
-      "filename": "EFAOurDaisyBilingual_v3_6_72.zip",
-      "version": "3.6.72",
-      "size_kb": 131,
-      "updated": "2026-10-22",
-      "download_url": "https://drive.usercontent.google.com/download?id=1JmZCHl4fVbcQVOmkJdSv7qX0qQh0kSgM&export=download&confirm=t",
+      "filename": "EFAOurDaisyBilingual_v3_6_74.zip",
+      "version": "3.6.74",
+      "size_kb": 136,
+      "updated": "2026-10-24",
+      "download_url": "https://drive.usercontent.google.com/download?id=180nkP8ESsjorLMm3MFmWvH8ZEF-qfkHs&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
         "new_features": [
+          "（v3.6.73）読書レベルを、母語の本文の語数と1ページの文の数からアプリが自動で数えて決めるようにしました。根拠は画面に表示します。",
           "（v3.6.70）Wordを追加すると、本文から言語を自動で判定して選ぶようにしました。",
           "（v3.6.70）選んだ言語と原稿の言語がちがうとき、変換の前に確認画面を出すようにしました。"
         ],
         "bug_fixes": [
-          "書籍情報で母語版に選んだ対象年齢・読書レベル・日本語レベルが、ライブラリ登録用のファイルに選んだとおりに入らない問題を直しました。",
+          "書籍IDの初期値「BOOK-001」がそのまま残り、ライブラリの番号を取り違えることがある問題を直しました。",
+          "（v3.6.73）AIの判定に失敗したとき、対象年齢・読書レベルに「A1・R1」が黙って入ってしまう問題を直しました。対象年齢を選ぶまで変換は始まりません。",
+          "（v3.6.73）翻訳アプリの判定ファイルが古い形式のとき、著者名や書籍IDなども引き継がれない問題を直しました。",
+          "（v3.6.72）書籍情報で母語版に選んだ対象年齢・読書レベル・日本語レベルが、ライブラリ登録用のファイルに選んだとおりに入らない問題を直しました。",
           "（v3.6.71）Visual C++ 再頒布可能パッケージが無いパソコンで、何も表示されずにアプリが閉じてしまう問題を直しました。入れ方を画面に表示します。",
           "（v3.6.70）言語の初期値がラオス語になっていて、ほかの言語の原稿をラオス語の本として作ってしまうことがある問題を直しました。",
           "（v3.6.70）ファイル名の言語名が選んだ言語に書き換えられ、言語のまちがいに気づけない問題を直しました。",
@@ -68,6 +72,10 @@
           "（v3.6.58）ラオス語・クメール語の本で、再生が途中で止まる不具合を修正しました。"
         ],
         "improvements": [
+          "書籍情報の入力画面から「書籍ID」の欄をなくしました。ライブラリの番号は公開のときに自動で付くため、入力は不要です。",
+          "（v3.6.73）対象年齢を、学校の学年に合わせた区分（就学前／小学1・2年／小学3・4年／小学5・6年／中学生以上／全年齢）に変えました。",
+          "（v3.6.73）読書レベルを4段階（読みはじめ／読みの練習／ひとりで読める／すらすら読める）に変え、3つの版で同じ値にしました。",
+          "（v3.6.73）対象年齢・読書レベルを1行変えると、ほかの版の行も同じ値になるようにしました。",
           "（v3.6.71）起動に失敗したとき、黒い画面がすぐに閉じず、案内を表示して止まるようにしました。",
           "（v3.6.71）やさしい日本語版は小学1・2年生で習う漢字にふりがなを付けない仕様のため、画面の「総ルビ」という表記を「ふりがな付き」に直しました。",
           "（v3.6.71）セットアップの最後に、起動するファイルの見分け方と担当者IDの入力を案内するようにしました。",
@@ -80,10 +88,10 @@
   "manuals": {
     "prod": {
       "name": "EFA バイリンガルDAISY図書 制作マニュアル",
-      "filename": "EFAManual_PROD_v3_12.docx",
-      "version": "3.12",
-      "set_filename": "EFAManual_PROD_Set_v3_12.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=1HapMKZoKl4f8v9zx8uvaLMYnzR00ndKn&export=download&confirm=t",
+      "filename": "EFAManual_PROD_v3_13.docx",
+      "version": "3.13",
+      "set_filename": "EFAManual_PROD_Set_v3_13.zip",
+      "set_download_url": "https://drive.usercontent.google.com/download?id=1eUglx0tp4xm5AW4D77PixJuKDC8gwNAK&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
       "tts_report": {
         "filename": "TTS_ReportForm_v1_2.docx",
