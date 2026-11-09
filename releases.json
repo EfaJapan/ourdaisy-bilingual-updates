@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09 00:35",
+  "updated": "2026-11-09 10:07",
   "apps": {
     "translator": {
       "name": "EFA Translator",
@@ -38,14 +38,15 @@
     },
     "daisy": {
       "name": "EFA OurDAISY Bilingual",
-      "filename": "EFAOurDaisyBilingual_v3_6_76.zip",
-      "version": "3.6.76",
-      "size_kb": 498,
-      "updated": "2026-10-27",
-      "download_url": "https://drive.usercontent.google.com/download?id=1h2SYH79UUl3Pw7v9dC71Xg0r5ykNYHHo&export=download&confirm=t",
+      "filename": "EFAOurDaisyBilingual_v3_6_77.zip",
+      "version": "3.6.77",
+      "size_kb": 502,
+      "updated": "2026-11-09",
+      "download_url": "https://drive.usercontent.google.com/download?id=1Q8YbhE0zQwwWdP-8M6SWJquagQ-6hZhK&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
         "new_features": [
+          "（v3.6.77）担当者IDを設定していると、書籍情報の「制作協力」に、その本の作業を担当した人の名前が作業ごとに自動で入り、電子図書に載るようになりました。名前は各自がボランティアフォームで選んだ載せ方のとおりで、ローマ字の姓（大文字）・名の順です（例：YAMADA Hanako）。",
           "（v3.6.73）読書レベルを、母語の本文の語数と1ページの文の数からアプリが自動で数えて決めるようにしました。根拠は画面に表示します。",
           "（v3.6.70）Wordを追加すると、本文から言語を自動で判定して選ぶようにしました。",
           "（v3.6.70）選んだ言語と原稿の言語がちがうとき、変換の前に確認画面を出すようにしました。"
@@ -79,6 +80,7 @@
           "（v3.6.58）ラオス語・クメール語の本で、再生が途中で止まる不具合を修正しました。"
         ],
         "improvements": [
+          "（v3.6.77）担当者IDを設定しているときは、制作者を「EFA Japan」で固定し、名前を手で入れる手間をなくしました。",
           "（v3.6.74）書籍情報の入力画面から「書籍ID」の欄をなくしました。ライブラリの番号は公開のときに自動で付くため、入力は不要です。",
           "（v3.6.73）対象年齢を、学校の学年に合わせた区分（就学前／小学1・2年／小学3・4年／小学5・6年／中学生以上／全年齢）に変えました。",
           "（v3.6.73）読書レベルを4段階（読みはじめ／読みの練習／ひとりで読める／すらすら読める）に変え、3つの版で同じ値にしました。",
@@ -95,14 +97,14 @@
   "manuals": {
     "prod": {
       "name": "EFA バイリンガルDAISY図書 制作マニュアル",
-      "filename": "EFAManual_PROD_v3_14.docx",
-      "version": "3.14",
-      "set_filename": "EFAManual_PROD_Set_v3_14.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=1JEGkzBzn95JU_MnB5dnSon4uMPZ7qj0-&export=download&confirm=t",
+      "filename": "EFAManual_PROD_v3_15.docx",
+      "version": "3.15",
+      "set_filename": "EFAManual_PROD_Set_v3_15.zip",
+      "set_download_url": "https://drive.usercontent.google.com/download?id=1wkp7jljrtRefmUoURcejtcp18djK2YMs&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
       "tts_report": {
         "filename": "TTS_ReportForm_v1_2.docx",
-        "download_url": "https://drive.usercontent.google.com/download?id=178QUHjN5w80Kgsf1rgFoKPyTJXtYVeSa&export=download&confirm=t"
+        "download_url": "https://drive.usercontent.google.com/download?id=1jM2I1CAE4v1AGq39qj4nJh3xQz1cP4_Q&export=download&confirm=t"
       }
     }
   }
