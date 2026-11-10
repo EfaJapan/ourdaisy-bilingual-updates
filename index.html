@@ -439,6 +439,24 @@
     font-size: 0.7rem;
   }
 
+  /* 変更点：ふだんは最初の数件だけ表示し、ボタンで全文を開く */
+  .changelog-list li.cl-more { display: none; }
+  .changelog-list.open li.cl-more { display: list-item; }
+  .changelog-toggle {
+    margin-top: 8px;
+    background: none;
+    border: 1px solid #C5DEFF;
+    border-radius: 999px;
+    padding: 4px 14px;
+    font-size: 0.76rem;
+    font-weight: 700;
+    color: var(--blue);
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .changelog-toggle:hover { background: #F0F6FF; }
+  .changelog-toggle:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+
   /* ダウンロードボタン */
   .download-btn {
     display: flex;
@@ -1118,7 +1136,7 @@ async function loadReleases() {
       if (dEl) dEl.textContent = formatDateJp(tr.updated);
     }
     if (tr && tr.changelog) {
-      updateChangelog('translator-changelog', tr.changelog);
+      updateChangelog('translator-changelog', tr.changelog, tr.version);
     }
     if (tr) {
       if (tr.download_url) APP_URLS.translator.zip    = tr.download_url;
@@ -1136,7 +1154,7 @@ async function loadReleases() {
       if (dEl) dEl.textContent = formatDateJp(ds.updated);
     }
     if (ds && ds.changelog) {
-      updateChangelog('daisy-changelog', ds.changelog);
+      updateChangelog('daisy-changelog', ds.changelog, ds.version);
     }
     if (ds) {
       if (ds.download_url) APP_URLS.daisy.zip    = ds.download_url;
@@ -1229,21 +1247,67 @@ function triggerDownload(url) {
   }, 200);
 }
 
-// changelog更新
-function updateChangelog(id, changelog) {
+// changelog更新（ふだんは最初の CHANGELOG_SHOW 件だけ表示し、「すべて見る」で全文を開く）
+const CHANGELOG_SHOW = 3;
+function updateChangelog(id, changelog, appVersion) {
   const ul = document.getElementById(id);
   if (!ul) return;
-  const items = [
-    ...(changelog.bug_fixes || []),
+  const items = sortChangelog([
+    ...(changelog.new_features || []),
     ...(changelog.improvements || []),
-    ...(changelog.new_features || [])
-  ];
+    ...(changelog.bug_fixes || [])
+  ], appVersion);
   if (items.length === 0) return;
-  ul.innerHTML = items.map(item =>
-    '<li style="font-size:0.8rem; color:var(--text-light); line-height:1.6; padding-left:14px; position:relative;">' +
+  ul.innerHTML = items.map((item, i) =>
+    '<li' + (i >= CHANGELOG_SHOW ? ' class="cl-more"' : '') +
+    ' style="font-size:0.8rem; color:var(--text-light); line-height:1.6; padding-left:14px; position:relative;">' +
     '<span style="position:absolute;left:0;color:var(--blue);font-size:0.7rem;">▸</span>' +
     escHtml(item) + '</li>'
   ).join('');
+  setupChangelogToggle(ul, items.length);
+}
+
+// 新しい版の変更を先に並べる（同じ版の中では元の順：新機能→改善→不具合の修正）。
+// 「（v3.6.77）」のような版の印がない項目は、いまの版（appVersion）の変更とみなす。
+// ただし、いまの版の印がついた項目がほかにあるときは、印のない項目はその一つ前の版の変更とみなす
+function sortChangelog(items, appVersion) {
+  const parse = function (v) {
+    const m = String(v || '').match(/(\d+)\.(\d+)\.(\d+)/);
+    return m ? [+m[1], +m[2], +m[3]] : null;
+  };
+  const tagged = function (t) { return parse((String(t).match(/^（v([\d.]+)/) || [])[1]); };
+  const cur = parse(appVersion);
+  const same = function (a, b) { return a && b && a[0] === b[0] && a[1] === b[1] && a[2] === b[2]; };
+  const curTagged = items.some(function (t) { return same(tagged(t), cur); });
+  const untaggedVer = cur ? (curTagged ? [cur[0], cur[1], cur[2] - 0.5] : cur) : [Infinity, 0, 0];
+  return items.map(function (t, i) { return { t: t, v: tagged(t) || untaggedVer, i: i }; })
+    .sort(function (a, b) {
+      for (let k = 0; k < 3; k++) if (a.v[k] !== b.v[k]) return a.v[k] > b.v[k] ? -1 : 1;
+      return a.i - b.i;
+    })
+    .map(function (o) { return o.t; });
+}
+
+function setupChangelogToggle(ul, total) {
+  let btn = ul.nextElementSibling;
+  if (!btn || !btn.classList.contains('changelog-toggle')) {
+    btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'changelog-toggle';
+    btn.setAttribute('aria-controls', ul.id);
+    ul.parentNode.insertBefore(btn, ul.nextSibling);
+    btn.addEventListener('click', function () {
+      paintChangelogToggle(btn, ul.classList.toggle('open'));
+    });
+  }
+  btn.dataset.total = total;
+  ul.classList.remove('open');
+  btn.hidden = total <= CHANGELOG_SHOW;
+  paintChangelogToggle(btn, false);
+}
+function paintChangelogToggle(btn, open) {
+  btn.textContent = open ? '▲ 閉じる' : '▼ すべての変更点を見る（全' + btn.dataset.total + '件）';
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
 }
 
 // XSS対策
