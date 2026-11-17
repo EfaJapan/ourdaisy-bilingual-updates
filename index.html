@@ -21,7 +21,7 @@
     --green: #2a9d5c;
     --green-light: #f0f9f4;
     --accent-light: #fff8e8;
-    /* ボランティアタイプ配色（Flyer V1 / クイックガイド等の既存資料と統一） */
+    /* ボランティアタイプ配色（Flyer V1 等の既存資料と統一） */
     --type-a: #D64550;
     --type-b: #2a9d5c;
     --type-c: #7C5CBF;
@@ -671,11 +671,11 @@
       </div>
       <div class="type-desc">PCでの原稿作成・アプリ操作が中心。図書制作の核となる工程を担当します。</div>
       <ul class="type-tasks">
-        <li>作業1：原本のスキャン・OCR（紙原稿の場合のみ）</li>
-        <li>作業2：やさしい日本語の確認・微修正</li>
-        <li>作業3：翻訳アプリの操作（Word原稿→3種類の版）</li>
-        <li>作業4：電子図書アプリの操作（Word→EPUB生成）</li>
-        <li>作業5：読み上げ音声（TTS）の確認</li>
+        <li>①原稿作成：原本のスキャン・OCR（紙の絵本しかない場合のみ・スキャナーが必要）</li>
+        <li>③翻訳アプリの実行：Word原稿→3種類の版</li>
+        <li>④日本語校正：やさしい日本語・標準日本語を整える</li>
+        <li>⑤EPUB作成：電子図書アプリでWord→EPUB（3種類）</li>
+        <li>⑥音声確認：リーダーアプリで読み上げ（TTS）を確認</li>
       </ul>
       <div class="type-downloads">
         <strong>必要なダウンロード：</strong><br>
@@ -693,9 +693,9 @@
         <div class="type-badge">B</div>
         <div class="type-name">日本語校正担当</div>
       </div>
-      <div class="type-desc">ITスキルは不要です。AIが自動生成した「やさしい日本語」版を読み、子どもが読めるか確認・微修正します。</div>
+      <div class="type-desc">アプリのインストールは不要です。翻訳アプリが作った「やさしい日本語」版などを読み、子どもが読めるかを確かめて整えます。</div>
       <ul class="type-tasks">
-        <li>作業2：やさしい日本語の確認・微修正</li>
+        <li>④日本語校正：やさしい日本語・標準日本語を整える</li>
       </ul>
       <div class="type-downloads">
         <strong>必要なダウンロード：</strong><br>
@@ -712,7 +712,7 @@
       </div>
       <div class="type-desc">無料のリーダーアプリと、音声が聴ける環境があればOK。完成した電子図書をリーダーアプリで再生し、読み間違いがないか確認します。</div>
       <ul class="type-tasks">
-        <li>作業5：読み上げ音声（TTS）の確認</li>
+        <li>⑥音声確認：リーダーアプリで読み上げ（TTS）を確認</li>
       </ul>
       <div class="type-downloads">
         <strong>必要なダウンロード：</strong><br>
@@ -727,7 +727,7 @@
   </div>
 
   <div style="font-size:0.78rem; color:var(--text-light); margin:0 0 40px; line-height:1.8;">
-    ※ タイプの詳細・登録後の進め方は、ボランティア登録時にご案内する「参加ガイド」「クイックガイド」をご参照ください。複数タイプの兼任もご相談いただけます。
+    ※ タイプの詳細・作業の流れは制作マニュアルの Ch.1、作業の予約・完了報告のしかたは Ch.3 をご覧ください。複数タイプの兼任もご相談いただけます。
   </div>
 
   <!-- アプリダウンロード -->
@@ -741,7 +741,7 @@
       <div class="app-icon">📷</div>
       <div class="app-name">EFA OurDaisy OCR</div>
       <div class="app-tagline">スキャンした絵本のPDFから、ベース原稿（Word）を作成</div>
-      <div class="type-chip chip-a">作業1・タイプA向け</div>
+      <div class="type-chip chip-a">①原稿作成・タイプA向け</div>
     </div>
     <div class="card-body">
       <div class="what-it-does">
@@ -768,6 +768,7 @@
         <ul class="changelog-list">
           <li>Windows 専用です（Mac には対応していません）</li>
           <li>OCRの結果は下書きです。必ず現地スタッフが最終確認します</li>
+          <li>原本はスキャナーで取り込みます（スマートフォンでの撮影は使えません）</li>
         </ul>
       </div>
 
@@ -808,7 +809,7 @@
         <div class="app-icon">📖</div>
         <div class="app-name">EFA Translator</div>
         <div class="app-tagline">母語の絵本から、3種類の版を自動生成</div>
-        <div class="type-chip chip-a">作業3・タイプA向け</div>
+        <div class="type-chip chip-a">③翻訳アプリの実行・タイプA向け</div>
       </div>
       <div class="card-body">
         <div class="what-it-does">
@@ -848,11 +849,11 @@
         <div class="app-icon">🎧</div>
         <div class="app-name">EFA OurDAISY Bilingual</div>
         <div class="app-tagline">Wordファイルから音声付き電子図書（EPUB）を自動生成</div>
-        <div class="type-chip chip-a">作業4・タイプA向け</div>
+        <div class="type-chip chip-a">⑤EPUB作成・タイプA向け</div>
       </div>
       <div class="card-body">
         <div class="what-it-does">
-          翻訳アプリで作成したWordファイルを読み込み、読み上げ音声・ページめくり・ふりがな表示に対応したEPUB3形式の電子図書を4種類同時に生成します。
+          翻訳アプリで作成したWordファイルを読み込み、読み上げ音声・ページめくり・ふりがな表示に対応したEPUB3形式の電子図書を3種類（母語／母語＋やさしい日本語／母語＋標準日本語）まとめて生成します。
         </div>
         <ul class="feature-list">
           <li>音声読み上げと文字ハイライトが連動</li>
@@ -893,8 +894,8 @@
 
   <div style="background:var(--white); border-radius:var(--radius); box-shadow:var(--shadow); padding:22px 28px; margin-bottom:40px;">
     <div style="display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-bottom:8px;">
-      <div style="font-size:1rem; font-weight:700; color:var(--blue-dark);">🎧 音声確認（作業5）には、リーダーアプリが必要です</div>
-      <div class="type-chip chip-c">作業5・タイプC／タイプA向け</div>
+      <div style="font-size:1rem; font-weight:700; color:var(--blue-dark);">🎧 音声確認（⑥）には、リーダーアプリが必要です</div>
+      <div class="type-chip chip-c">⑥音声確認・タイプC／タイプA向け</div>
     </div>
     <div style="font-size:0.83rem; color:var(--text-light); line-height:1.8; margin-bottom:14px;">
       リーダーアプリは、完成した電子図書（EPUB）を再生する無料のアプリです。音声確認では、このアプリで電子図書を再生し、読み上げを聴きながら確認します。<br>
