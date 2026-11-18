@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18 11:37",
+  "updated": "2026-11-18 13:08",
   "apps": {
     "translator": {
       "name": "EFA Translator",
@@ -46,9 +46,9 @@
       "name": "EFA OurDAISY Bilingual",
       "filename": "EFAOurDaisyBilingual_v3_6_79.zip",
       "version": "3.6.79",
-      "size_kb": 515,
+      "size_kb": 516,
       "updated": "2026-11-18",
-      "download_url": "https://drive.usercontent.google.com/download?id=1Bhr5Hace34H1m4fq3N0Fd_G5VQxb3hkW&export=download&confirm=t",
+      "download_url": "https://drive.usercontent.google.com/download?id=1DPV3Jab3XAfQ2yuRY4k6evEwsKzVMeTT&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
         "new_features": [
@@ -61,6 +61,7 @@
         "bug_fixes": [
           "やさしい日本語版で、分かち書きの空白が電子図書の表示から消えていた不具合を直しました。",
           "標準日本語版で、文字のハイライトが言葉の途中（例：「サ｜ル」「飛｜び立ち」）で区切られる不具合を直しました。",
+          "ページの見出しの綴り（例：ラオス語「ໜ້າທີ 2」）によっては、母語のページ番号を読み上げていた不具合を直しました。",
           "（v3.6.78）表紙に絵の説明がある本で、書籍情報のページの題名が読まれず、絵の説明が読まれてしまう不具合を直しました。",
           "（v3.6.76）「一しゅん」「まん中」「お日さま」「日本ご」など、熟語の一部をひらがなで書いた言葉の読み間違いを、まとめて修正しました。",
           "（v3.6.76）分かち書きのない文で、ハイライトの区切りがふりがなの途中に入り、文字の表示が割れることがある不具合を修正しました。",
@@ -113,7 +114,7 @@
       "filename": "EFAManual_PROD_v3_16.docx",
       "version": "3.16",
       "set_filename": "EFAManual_PROD_Set_v3_16.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=1py0nz8ivnbycye6gnPOueBfUj0lohuBu&export=download&confirm=t",
+      "set_download_url": "https://drive.usercontent.google.com/download?id=1bwin1JpBhMRqGRdtSkSUZfNmFlIrSJiL&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
       "tts_report": {
         "filename": "TTS_ReportForm_v1_2.docx",
