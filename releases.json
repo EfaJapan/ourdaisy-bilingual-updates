@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26 14:46",
+  "updated": "2026-11-26 16:21",
   "apps": {
     "translator": {
       "name": "EFA Translator",
@@ -52,11 +52,11 @@
     },
     "daisy": {
       "name": "EFA OurDAISY Bilingual",
-      "filename": "EFAOurDaisyBilingual_v3_6_82.zip",
-      "version": "3.6.82",
-      "size_kb": 528,
-      "updated": "2026-11-24",
-      "download_url": "https://drive.usercontent.google.com/download?id=1ncjeSXy7VugM24kgajPbIY-Ep_737thY&export=download&confirm=t",
+      "filename": "EFAOurDaisyBilingual_v3_6_83.zip",
+      "version": "3.6.83",
+      "size_kb": 530,
+      "updated": "2026-11-26",
+      "download_url": "https://drive.usercontent.google.com/download?id=1Gk2p2Ja7KDwc1MtK3_MYHanpzAu3p3aw&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1vF6Fk4H_6YUgppnV2RICaH2MALhxZiU3",
       "changelog": {
         "new_features": [
@@ -67,6 +67,8 @@
           "（v3.6.70）選んだ言語と原稿の言語がちがうとき、変換の前に確認画面を出すようにしました。"
         ],
         "bug_fixes": [
+          "（v3.6.83）標準日本語版で、「…？」「」。」のあとの言葉が、文字のハイライトの途中で分かれる不具合を直しました（例：「わたし」「にも色を…」→「わたしにも」「色を…」）。",
+          "（v3.6.83）「このけんかを止めに」の「止めに」を「やめに」と読む不具合を直しました。",
           "ラオス語・クメール語の長い文で、文字のハイライトと読み上げがずれる不具合を直しました。文の前後の無音を除いた、実際に話している部分に合わせて区切ります。",
           "「1181年〜1220年」「3日〜5日」のように、年・月・日などのあとの「〜」が「から」と読まれない不具合を直しました。",
           "「1060年ごろ」を「としごろ」、「何の 話だい？」を「わだい」、「夜じゅう」を「よじゅう」と読む不具合を直しました。",
@@ -111,6 +113,7 @@
           "（v3.6.58）ラオス語・クメール語の本で、再生が途中で止まる不具合を修正しました。"
         ],
         "improvements": [
+          "（v3.6.83）言語によって、母語の読み上げの声が日本語より小さく聞こえていたのを直しました。言語ごとに音声の大きさをそろえます（音質・読み上げの時間・文字のハイライトは変わりません）。",
           "（v3.6.81）「ネズミ」の読み上げの調子を自然にしました。",
           "（v3.6.79）日本語の読み上げを自然にしました。段落をまとめて読み上げ、「、」「。」ごとにあいていた約2秒の間をなくしました。読み上げの時間は約4分の1短くなります（声と速さは変わりません）。",
           "（v3.6.79）日本語の版で、ふりがなのある漢字を漢字のまま読み上げるようにし、言葉の抑揚が崩れないようにしました。",
@@ -135,7 +138,7 @@
       "filename": "EFAManual_PROD_v3_16.docx",
       "version": "3.16",
       "set_filename": "EFAManual_PROD_Set_v3_16.zip",
-      "set_download_url": "https://drive.usercontent.google.com/download?id=1H9UnL_NhQe-d6rnZ1C2akR7Pg0fhbqEb&export=download&confirm=t",
+      "set_download_url": "https://drive.usercontent.google.com/download?id=1xItj5o6JkNNJ6h2ko-bPkXNRBDtn_yj-&export=download&confirm=t",
       "folder_url": "https://drive.google.com/drive/folders/1c6fu1-fAN9OY7-RLYvMuy-0fBE4XlTF4",
       "tts_report": {
         "filename": "TTS_ReportForm_v1_2.docx",
